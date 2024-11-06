@@ -1,0 +1,52 @@
+<!-- farmer.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Support - Disaster Management Portal</title>
+  <link rel="stylesheet" href="/farmer/fstyle.css">
+</head>
+<body>
+
+  <header>
+    <h1>Farmer Support</h1>
+    <p>Optimize water use and prepare for weather changes with real-time recommendations.</p>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#">Farmer Support</a></li>
+      <li><a href="/tutorial/main.html">Tutorial</a></li>
+      <li><a href="/donation/donation.html">Donate and Help</a></li>
+      <li><a href="/volunteer/vindex.html">Volunteer</a></li>
+    </ul>
+  </nav>
+  <main class="farmer-content">
+    <!-- Location Input Section -->
+    <section class="location-input">
+      <label for="location">Enter your location:</label>
+      <input type="text" id="location" placeholder="e.g., New York">
+      <button onclick="getWeatherData()">Get Weather Forecast</button>
+    </section>
+
+    <section class="weather-forecast">
+      <h2>Weather Forecast</h2>
+      <p>Current Temperature: <span id="temp">--°C</span></p>
+      <p>Expected Rainfall: <span id="rainfall">-- mm</span></p>
+      <p>Solar Radiation: <span id="radiation">-- W/m²</span></p>
+    </section>
+
+    <section class="irrigation-advice">
+      <h2>Irrigation Recommendations</h2>
+      <p>Based on the forecasted weather, we recommend:</p>
+      <ul id="recommendations">
+        <li>Reduce watering by 20% due to upcoming rain.</li>
+        <li>Increase irrigation next week due to dry conditions.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="/farmer/fscript.js"></script>
+</body>
+</html>

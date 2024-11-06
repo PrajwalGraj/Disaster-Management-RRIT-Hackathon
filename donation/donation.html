@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Portal</title>
+    <link rel="stylesheet" href="donation.css">
+</head>
+<body>
+    <header>
+        <h1>Disaster Donation Portal</h1>
+        <p>Help us support those in need!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/farmer/findex.html">Farmer Support</a></li>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="#">Component 3</a></li>
+            <li><a href="#">Component 4</a></li>
+            <li><a href="/volunteer/vindex.html">Volunteer</a></li>
+            <li><a href="donation.html">Donation</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Current Donations</h2>
+        <p id="current-donations">Total Donations :<span id="total-amount">12000.00</span></p>
+
+        <h2>Make a Donation</h2>
+        <form id="donation-form">
+            <label for="donation-amount">Donation Amount:</label>
+            <input type="number" id="donation-amount" min="1" required>
+
+            <button type="submit">Donate</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Disaster Management Portal</p>
+    </footer>
+
+    <script src="donation.js"></script>
+</body>
+</html>
