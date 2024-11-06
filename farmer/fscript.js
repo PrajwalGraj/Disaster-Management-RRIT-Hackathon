@@ -19,7 +19,7 @@ const rainfallData = {
     // Add more cities and corresponding rainfall data as needed
   };
 async function getWeatherData() {
-    const apiKey = '11327015970466390c6da317694217e9';
+    const apiKey = 'API_KEY';
     const location = document.getElementById('location').value;
   
     if (!location) {
